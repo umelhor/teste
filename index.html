@@ -1,0 +1,207 @@
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="js/scrollreveal.js"></script>
+    <LINK rel=StyleSheet href="css/main.css" type="text/css" media=screen>
+    <title>love you </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    
+</head>
+
+<body>
+   
+    <style>
+
+        *, *::after,*::before{
+            margin: 0;  
+            padding: 0;
+            -webkit-box-sezing: border-box;
+            -moz-box-sezing: border-box;
+            box-sezing: border-box;
+        }
+        #barracarga{
+            background-color:rgb(255, 255, 255);
+            height: 100%;
+            width: 100%;
+            position: fixed;
+            -webkit-transition: all 1s ease;
+            -o-transition: all 1s ease;
+            transition: all 1s ease;
+            z-index:1000;
+        }
+    
+        #cargando{
+            border: 15px solid #ccc;
+            border-top-color: rgb(151, 150, 150);
+            border-radius: 100%;
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            top:0px;
+            bottom:0px;
+            left:0px;
+            right: 0px;
+            margin:auto;
+            -webkit-animation: rotate  2s linear infinite;
+            animation: rotate  2s linear infinite;
+        }
+        @-webkit-keyframes rotate  {
+            from {-webkit-transform: rotate(0deg);}
+            to {-webkit-transform: rotate(360deg);}
+        }
+    
+    </style>
+    
+    <div id="barracarga"> 
+        
+        <div id="cargando"></div>
+    
+    </div>
+    
+    <script>
+       window.onload = function(){
+          
+            var contenedor = document.getElementById('barracarga');
+            
+            contenedor.style.visibility = 'hidden';
+            
+            contenedor.style.opacity = '0'
+       }
+    </script>
+    
+
+    <div id="container">
+      
+        
+        <div class="saludo">
+            <center>
+                <audio id="demo" src="lisboa.mp3"></audio>
+                <script>
+                    document.getElementById('demo').play();
+                    document.getElementById('demo').pause()
+                </script>
+                <div>
+                </div>
+                <h1 class="entrada animacion-1"> Um dia voce me falou </h1>
+                <h2 class="inicio-h1 animacion-2">que para te conquistar tinha que te surpreender</h2>
+                <h2 class="inicio-h1 animacion-3"> e voce falou q gosta de carta </h2>
+                <h2 class="inicio-h1 animacion-4">como nao posso te escrever uma fiz isso</h2>     
+                <p>
+                    <span class="animacion-5">3..</span>
+                    <span class="animacion-6">2..</span>
+                    <span class="animacion-7">1..</span>
+                </p>
+                <a onclick="cambiar()" id="play"><img src="img/corazon.png" class="animacion-8 img " ></a> 
+
+                </script>              
+            </center>
+        </div>
+    </div>
+    <div id="container2">
+        <div class="saludo2">
+
+            <center>
+                <h1 class="title">talves eu esteja apaixonado;3 <br>  <br></h1>
+            </center>
+            <h2  class=""> <span class="typed "></span> </h2>
+        </div>
+       
+    </div>
+    <div id="container3">
+        <div class="saludo2">
+
+
+        </div>
+       
+    </div>
+    
+    <script>
+        cont1= document.getElementById('container');
+        cont2= document.getElementById('container2');
+        cont3= document.getElementById('container3');
+        cont2.style.display= 'none';
+        cont3.style.display= 'none';
+        
+        function cambiar(){
+            document.getElementById('demo').play();
+            cont1.style.display= 'none';
+            cont2.style.display= 'block';
+            frase1 = 'Talvez a próxima seja de papel, ';
+            frase2 = frase1 + 'mas o que tenho pra dizer sobre você é algo que vem do coração.<br>';
+            frase3 = frase2 + 'Você é incrível, já me vejo passando natais com você, ';
+            frase4 = frase3 + 'adoro imaginar nossa família reunida, o calor do seu sorriso e o brilho nos seus olhos.<br>';
+            frase5 = frase4 + 'Amo o som da sua voz, sua risada me faz feliz de um jeito inexplicável. ';
+            frase6 = frase5 + 'Seus pensamentos safados sempre me arrancam um sorriso, ';
+            frase7 = frase6 + 'e como não falar do seu cabelo? Lindo, do jeito que só você tem.<br>';
+            frase8 = frase7 + 'Seus olhos são maravilhosos, profundos como o oceano, ';
+            frase9 = frase8 + 'e seu corpo… ah, que mulher perfeita você é.<br>';
+            frase10 = frase9 + 'Prometo te fazer feliz, sempre ser fiel e cuidar de você.<br>';
+            frase11 = frase10 + 'Talvez a próxima seja de papel.<br>';
+            frase12 = frase11 + 'Mas o que tenho pra dizer sobre você...<br>';
+            frase13 = frase12 + 'Você é perfeita.<br>';
+            frase14 = frase13 + 'Possui todas as qualidades que procuro em alguém. ';
+            frase15 = frase14 + 'E, mesmo que tenha defeitos, vou gostar de todos eles.<br>';
+            frase2_1 = 'Prometo te fazer feliz.<br>';
+            frase2_2 = frase2_1 + 'Prometo ser fiel.<br>';
+            frase2_3 = frase2_2 + 'Prometo te acompanhar e cuidar.<br><br>';
+            frase2_4 = frase2_3 + 'nao sei oque to sentindo mas .<br>';
+            frase2_5 = frase2_4 + 'Eu amo o seu estilo musical.<br>';
+            frase2_6 = frase2_5 + 'Amo como você conversa comigo, como me entende e me deixa à vontade.<br>';
+            frase2_7 = frase2_6 + 'Você lançou um feitiço em mim.<br>';
+            frase2_8 = frase2_7 + 'Gosto tanto da nossa conexão, de como você me incentiva a estudar e a ser melhor.<br>';
+            frase2_9 = frase2_8 + 'Também amo como você se preocupa comigo, até mesmo ao me controlar para dormir cedo.<br>';
+            frase2_10 = frase2_9 + 'Adoro quando você fala dos seus fetiches, isso me faz te admirar ainda mais.<br>';
+            frase2_11 = frase2_10 + 'Não consigo dormir sem o seu boa noite e nem acordar sem o seu bom dia.<br>';
+            frase2_12 = frase2_11 + 'Penso em você o dia todo e, às vezes, me pego olhando para o celular e sorrindo.<br>';
+            frase3_1 = 'Talvez esteja sendo emocionado, mas não sei... ';
+            frase3_2 = frase3_1 + 'Às vezes penso no que você está fazendo.<br>';
+            frase3_3 = frase3_2 + 'No que você está pensando e por que demora pra me responder. ';
+            frase3_4 = frase3_3 + 'Então já queria dizer: eu gosto de você. ';
+            frase3_5 = frase3_4 + 'Eu quero você pra mim.<br>';
+            frase3_6 = frase3_5 + 'Aff, o que você fez comigo? <br><br><br><br>';
+            frase3_7= frase3_6 + 'Fim</a>';
+            const typed = new Typed('.typed', {
+                strings: [frase1, frase2,frase3, frase4, frase5,frase6,frase7,frase8,frase9,
+                        frase10,frase11,frase12,frase13,frase14,frase15,
+                        frase2_1,frase2_2,frase2_3,frase2_4,frase2_5,frase2_6,frase2_7,frase2_8,
+                        frase2_9,frase2_10,frase2_11,frase2_12,
+                        frase3_1, frase3_2, frase3_3, frase3_4, frase3_5, frase3_6, frase3_7
+                    ],
+                typeSpeed: 60,
+                startDelay:2000,
+                cursorChar: '<3',
+            });
+        }
+        function creditos(){
+            cont2.style.display= 'none';
+            cont3.style.display= 'block';
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+
+    </script>
+
+
+
+
+
+    <!-- <script src="js/animaciones-2.js"></script> -->
+    <script src="js/main.js"> </script>
+    <script src="js/animaciones-1.js"> </script>
+    
+    <!-- <footer>
+       
+        <div>
+            Iconos diseñados por:
+            <a href="https://www.freepik.com" title="Freepik">Freepik</a> 
+            from:
+            <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a>
+        </div>
+    </footer> -->
+</body>
+</html>
+<!-- 
+
+
